@@ -1,0 +1,201 @@
+/*
+#dc0032 - DPD Red
+#a90034 - Dark Red
+#414042 - DPD Black
+#cac4be - Warm Grey
+#808285 - Mid Grey
+#e6e7e8 - Light Grey
+*/
+
+@charset "utf-8";
+@font-face {
+    font-family: PlutoSansDPDExtraLight;
+    src: url(fonts/OTF/PlutoSansDPDExtraLight.otf);
+}
+@font-face {
+    font-family: PlutoSansDPDLight;
+    src: url(fonts/OTF/PlutoSansDPDLight.otf);
+}
+@font-face {
+    font-family: PlutoSansDPDRegular;
+    src: url(fonts/OTF/PlutoSansDPDRegular.otf);
+}
+@font-face {
+    font-family: PlutoSansDPDThin;
+    src: url(fonts/OTF/PlutoSansDPDThin.otf);
+}
+
+.bodyAddressForm { margin: 0; padding: 0px; }
+#speedyAddressForm { max-width: 730px; min-width: 350px; height: auto; border: 0px solid #808285 !important; margin: 10px 0px; padding: 10px 0px; font: 12px PlutoSansDPDLight; }
+.speedyAddressFormActions { max-width: 730px; min-width: 350px; border: 0px solid #808285 !important; margin: 10px 0px; padding: 0px 0px; text-align: center; }
+
+div.divClearBoth { clear: both; }
+div.divError { width: 90%; font: 12px PlutoSansDPDLight, Arial, Helvetica, sans-serif; background-color: #dc0032; color: #FFFFFF; text-align: center; padding: 7px; border: 1px solid #a90034; margin: 20px 0px 0px 0px; border-radius: 3px; }
+div.divOk { width: 90%; font: 12px PlutoSansDPDLight, Arial, Helvetica, sans-serif; background-color: #9ECF5C; color: #414042; text-align: center; padding: 7px; border: 1px solid #82AA30; margin: 20px 0px 0px 0px; border-radius: 3px; }
+
+.fieldsetAddressForm { border: 0px; padding: 0px; margin: 0px; }
+
+.divAddressRow { width: 100%; margin: 0px; padding: 0px; text-align: center; }
+.divAddresdRowBox { width: 355px; text-align: left; margin: 8px 4px 0px 4px; display: inline-block; padding: 0px; }
+/*
+.divAddresdRowBox { width: 348px; text-align: left; margin: 8px 5px 0px 5px; display: inline-block; padding: 0px; }
+*/
+.divAddresdRowBoxBig { width: calc(100% - 10px); text-align: left; margin: 8px 5px 0px 5px; display: inline-block; padding: 0px; }
+.divForeignAddresdRowBoxBig { width: calc(100% - 10px); text-align: left; margin: 8px 5px 0px 5px; display: inline-block; padding: 0px; }
+
+.divButtonRow { width: calc(100% - 10px); text-align: left; margin: 8px 5px 0px 5px; display: inline-block; padding: 0px; }
+
+
+@media screen and (max-width: 719px) {
+	.divAddresdRowBox { width: calc(100% - 10px); }
+}
+
+.speedyAddressSiteType, .speedyAddressSiteName, .speedyAddressSiteAddInfo,
+.speedyAddressComplexType, .speedyAddressComplexName, .speedyAddressStreetType, .speedyAddressStreetName, .speedyAddressStreetNo,
+.speedyAddressBlockNo, .speedyAddressEntranceNo, .speedyAddressFloorNo, .speedyAddressApartmentNo, .speedyAddressPoiName,
+.speedyAddressOfficeId, .speedyAddressOfficeName, .speedyAddressNote, .speedyAddressOfficeAddInfo,
+.speedyForeignAddressFormCountry, .speedyForeignAddressFormState, .speedyForeignAddressFormSite, .speedyForeignAddressFormPostCode, .speedyForeignAddressFormLine {
+	text-align: left;
+	font: 12px PlutoSansDPDLight; 
+	color: #414042;
+	background-color: #FFFFFF; /*FAFAFA*/ 
+	padding: 4px;
+	border: 1px solid #e6e7e8; 
+	border-left: 1px solid #808285;
+	border-top: 1px solid #808285;
+	border-right: 1px solid #cac4be;
+	border-bottom: 1px solid #cac4be;
+	border-radius: 3px;
+	vertical-align: middle;
+}
+.speedyAddressSiteName, .speedyAddressSiteAddInfo,
+.speedyAddressComplexName, .speedyAddressStreetName, .speedyAddressStreetNo,
+.speedyAddressBlockNo, .speedyAddressEntranceNo, .speedyAddressFloorNo, .speedyAddressApartmentNo, .speedyAddressPoiName,
+.speedyAddressOfficeId, .speedyAddressOfficeName, .speedyAddressNote, .speedyAddressOfficeAddInfo,
+.speedyForeignAddressFormCountry, .speedyForeignAddressFormState, .speedyForeignAddressFormSite, .speedyForeignAddressFormPostCode, .speedyForeignAddressFormLine {
+	text-transform: uppercase;
+}
+
+.speedyAddressComplexType, .speedyAddressStreetType { padding: 3px 0px 3px 0px; height: 24px; }
+
+.speedyAddressSiteType:focus, .speedyAddressSiteName:focus, .speedyAddressSiteAddInfo:focus,
+.speedyAddressComplexType:focus, .speedyAddressComplexName:focus, .speedyAddressStreetType:focus, .speedyAddressStreetName:focus, .speedyAddressStreetNo:focus,
+.speedyAddressBlockNo:focus, .speedyAddressEntranceNo:focus, .speedyAddressFloorNo:focus, .speedyAddressApartmentNo:focus, .speedyAddressPoiName:focus,
+.speedyAddressOfficeId:focus, .speedyAddressOfficeName:focus, .speedyAddressNote:focus, .speedyAddressOfficeAddInfo:focus,
+.speedyForeignAddressFormCountry:focus, .speedyForeignAddressFormState:focus, .speedyForeignAddressFormSite:focus, .speedyForeignAddressFormPostCode:focus, .speedyForeignAddressFormLine:focus {
+	background-color: #fffbeb; 
+}
+
+.speedyAddressSiteType:disabled, .speedyAddressSiteName:disabled, .speedyAddressSiteAddInfo:disabled,
+.speedyAddressComplexType:disabled, .speedyAddressComplexName:disabled, .speedyAddressStreetType:disabled, .speedyAddressStreetName:disabled, .speedyAddressStreetNo:disabled,
+.speedyAddressBlockNo:disabled, .speedyAddressEntranceNo:disabled, .speedyAddressFloorNo:disabled, .speedyAddressApartmentNo:disabled, .speedyAddressPoiName:disabled,
+.speedyAddressOfficeId:disabled, .speedyAddressOfficeName:disabled, .speedyAddressNote:disabled, .speedyAddressOfficeAddInfo:disabled,
+.speedyForeignAddressFormCountry:disabled, .speedyForeignAddressFormState:disabled, .speedyForeignAddressFormSite:disabled, .speedyForeignAddressFormPostCode:disabled, .speedyForeignAddressFormLine:disabled {
+	background-color: #E6E7E8; 
+}
+
+.speedyAddressOfficeId {
+	background-color: #E6E7E8; 
+}
+
+/* ----- ADDRESS FORM ----- *
+/* Row 1 */
+/*.divAddressFormSettlement { text-align: right; width: 70px; margin: 0px; display: inline-block; }*/
+.divAddressFormSite { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyAddressSiteType { width: 50px; margin: 0px 0px 0px 3px; }
+.speedyAddressSiteName { width: calc(100% - 77px - 3px - 60px - 3px - 10px); margin: 0px 0px 0px 3px; }
+.speedyAddressSiteAddInfo { width: calc(100% - 10px); margin: 0px; }
+
+.divPickupOffice { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.inputPickupOffice {}
+
+/* Row 2 */
+.speedyAddressComplexType { width: 77px; margin: 0px; }
+.speedyAddressComplexName { width: calc(100% - 77px - 3px - 10px); margin: 0px 0px 0px 3px; } 
+.speedyAddressStreetType { width: 77px; margin: 0px; }
+.speedyAddressStreetName { width: calc(100% - 77px - 3px - 10px - 3px - 20px - 3px - 35px); margin: 0px 0px 0px 3px; }
+.divAddressFormStreetNo { width: 20px; margin: 0px 0px 0px 3px; display: inline-block; }
+.speedyAddressStreetNo { width: 25px; margin: 0px 0px 0px 3px; }
+
+/* Row 3 */
+.divAddressFormBlockNo { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyAddressBlockNo { width: calc(100% - 77px - 10px - 3px - 75px - 9px - 120px - 9px + 9px); margin: 0px 0px 0px 3px; }
+.divAddressFormEntranceNo { width: 25px; text-align: right; margin: 0px; display: inline-block; }
+.divAddressFormFloorNo { width: 25px; text-align: right; margin: 0px; display: inline-block; }
+.divAddressFormApartmentNo { width: 25px; text-align: right; margin: 0px; display: inline-block; }
+.speedyAddressEntranceNo, .speedyAddressFloorNo, .speedyAddressApartmentNo { width: 30px; margin: 0px 0px 0px 3px; }
+
+/* Row 4 */
+.divAddressPoiName { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyAddressPoiName { width: calc(100% - 77px - 10px - 3px); margin: 0px 0px 0px 3px; }
+.divAddressNote { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyAddressNote { width: calc(100% - 77px - 10px - 3px); margin: 0px 0px 0px 3px; }
+
+/* Row 5 */
+.divAddressFormOffice { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyAddressOfficeId { width: 50px; margin: 0px 0px 0px 3px; }
+.speedyAddressOfficeName { width: calc(100% - 67px - 3px - 60px - 10px - 3px - 10px); margin: 0px 0px 0px 3px; }
+
+.speedyAddressOfficeAddInfo { width: calc(100% - 77px - 3px - 10px); margin: 0px 0px 0px 3px; }
+
+
+
+
+
+/* ----- FOREIGN ADDRESS FORM ----- *
+/* Row 1 */
+.divForeignAddressFormCountry { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyForeignAddressFormCountry { width: calc(100% - 77px - 3px - 10px); margin: 0px 0px 0px 3px; } 
+.divForeignAddressFormState { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyForeignAddressFormState { width: calc(100% - 77px - 3px - 10px); margin: 0px 0px 0px 3px; } 
+
+/* Row 2 */
+.divForeignAddressFormSite { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyForeignAddressFormSite { width: calc(100% - 77px - 3px - 10px); margin: 0px 0px 0px 3px; } 
+.divForeignAddressFormPostCode { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyForeignAddressFormPostCode { width: calc(100% - 77px - 3px - 10px); margin: 0px 0px 0px 3px; } 
+
+/* Row 3, 4 */
+.divForeignAddressFormLine { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.speedyForeignAddressFormLine { width: calc(100% - 77px - 3px - 10px); margin: 0px 0px 0px 3px; }
+
+.divButtonRowLabel { width: 77px; text-align: right; margin: 0px; display: inline-block; }
+.inputButtonForm {
+ 	text-align: left;
+	font: 12px PlutoSansDPDLight; 
+   color: #FFFFFF;
+	background-color: #a90034; /*FAFAFA*/ 
+	padding: 4px 20px 4px 20px;
+	border: 1px solid #a90034; 
+	border-radius: 3px;
+	vertical-align: middle;
+}
+
+.tdLeft { text-align: left; }
+.tdCenter { text-align: center; }
+.tdRight { text-align: right; }
+
+
+.divInfoFields { max-width: 720px; min-width: 350px; border: 0px solid #e6e7e8; margin: 30px 0px 30px 0px; }
+.tableInfoFileds { width: 100%; font: 12px PlutoSansDPDLight, Arial, Helvetica, sans-serif; color: #414042; border-collapse: collapse; }
+.tableInfoFileds td { border: 1px solid #e6e7e8; }
+.tableInfoFiledsTitleRow { color: #dc0032; padding: 5px 0px 5px 0px; }
+.tableInfoFiledsColumn1 { width: 50%; text-align: right; }
+.tableInfoFiledsColumn2 { width: 50%; text-align: left; }
+.spanPropertyName { color: #414042; font: 12px PlutoSansDPDRegular, Arial, Helvetica, sans-serif; }
+.spanPropertyValue { color: #dc0032; }
+
+
+/* INDEX */
+/*
+.divIndexWidgetTitle { font: 14px PlutoSansDPDRegular, Arial, Helvetica, sans-serif; color: #414042; margin: 10px; }
+.divIndexLinks { max-width: 720px; min-width: 350px; font: 12px PlutoSansDPDLight, Arial, Helvetica, sans-serif; color: #414042; margin: 10px; }
+.divIndexContentTitle, .divIndexContent { max-width: 720px; min-width: 350px; margin: 10px 0px; text-align: left; }
+.divIndexContentTitle { font: 16px PlutoSansDPDRegular, Arial, Helvetica, sans-serif; color: #dc0032; }
+.divIndexContent { font: 12px PlutoSansDPDLight, Arial, Helvetica, sans-serif; color: #414042; }
+
+.aIndex { font: 12px PlutoSansDPDLight, Arial, Helvetica, sans-serif; color: #dc0032; text-decoration: underline; } 
+.aIndex:hover { color: #a90034; text-decoration: none; } 
+.tableProducts { max-width: 720px; min-width: 350px; font: 16px PlutoSansDPDLight, Arial, Helvetica, sans-serif; color: #dc0032; text-align: center; border-collapse: collapse; margin: 10px 0px; }
+.tableProducts .th, td { border: 1px solid #808285; }
+*/

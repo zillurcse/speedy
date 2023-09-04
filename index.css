@@ -1,0 +1,32 @@
+/* It is not using for the address form */
+
+@charset "utf-8";
+@font-face {
+    font-family: PlutoSansDPDExtraLight;
+    src: url(fonts/OTF/PlutoSansDPDExtraLight.otf);
+}
+@font-face {
+    font-family: PlutoSansDPDLight;
+    src: url(fonts/OTF/PlutoSansDPDLight.otf);
+}
+@font-face {
+    font-family: PlutoSansDPDRegular;
+    src: url(fonts/OTF/PlutoSansDPDRegular.otf);
+}
+@font-face {
+    font-family: PlutoSansDPDThin;
+    src: url(fonts/OTF/PlutoSansDPDThin.otf);
+}
+
+
+/* INDEX */
+.divIndexWidgetTitle { font: 14px PlutoSansDPDRegular, Arial, Helvetica, sans-serif; color: #414042; margin: 10px; }
+.divIndexLinks { max-width: 720px; min-width: 350px; font: 12px PlutoSansDPDLight, Arial, Helvetica, sans-serif; color: #414042; margin: 10px; }
+.divIndexContentTitle, .divIndexContent { max-width: 720px; min-width: 350px; margin: 10px 0px; text-align: left; }
+.divIndexContentTitle { font: 16px PlutoSansDPDRegular, Arial, Helvetica, sans-serif; color: #dc0032; }
+.divIndexContent { font: 12px PlutoSansDPDLight, Arial, Helvetica, sans-serif; color: #414042; }
+
+.aIndex { font: 12px PlutoSansDPDLight, Arial, Helvetica, sans-serif; color: #dc0032; text-decoration: underline; } 
+.aIndex:hover { color: #a90034; text-decoration: none; } 
+.tableProducts { max-width: 720px; min-width: 350px; font: 16px PlutoSansDPDLight, Arial, Helvetica, sans-serif; color: #dc0032; text-align: center; border-collapse: collapse; margin: 10px 0px; }
+.tableProducts .th, td { border: 1px solid #808285; }
